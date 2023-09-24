@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="<http://www.thymeleaf.org>">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{text-align: center;}
+        body{
+            padding-top: 0;
+          padding-left: 120px;
+          padding-right: 120px;
+            padding-bottom: 0;
+        }
+        .copy{color: blue}
+        td, th {
+            padding: .7em;
+            margin: 0;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            margin-bottom : .5em;
+            table-layout: fixed;
+            text-align: center;
+        }
+    </style>
+    <title>Projeto</title>
+</head>
+<body>
+<h1><span th:text="${appRecado}"></span></h1>
+<h1>Home</h1>
+<hr>
+<h2>Integrantes:</h2>
+<table border="table">
+    <tr>
+        <td><strong>Nome:</strong></td>
+        <td><strong>RGM:</strong></td>
+        <td><strong>Turma:</strong></td>
+    </tr>
+    <tr>
+        <td>Amabile Reis Fonseca</td>
+        <td>29896517</td>
+        <td>4° O</td>
+    </tr>
+</table>
+<br>
+<hr>
+<br>
+<h2>Introdução:</h2>
+<p>Com a ferramenta <strong><i>Spring</i></strong> criei três rotas, sendo elas "saudação", "media" e "home", veja abaixo as instruções de uso de cada uma das rotas.</p>
+<hr>
+<h3>Rota "/saudacao":</h3>
+<p>Para usar a rota você deve passar o parâmetro (nome) após a barra de endereço.</p>
+<p class="copy"><strong>Copie e cole: </strong>localhost:3500/saudacao/seu nome aqui.</p>
+<hr>
+<h3>Rota "/media"</h3>
+<p>Para usá-la basta colocar após a barra os valores que deseja calcular a média como resultado. Faça isso em duas etapas: primeiro incluir o "/valor1" e depois o "/valor2". Veja abaixo:</p>
+<p class="copy"><strong>Copie e cole: </strong>localhost:3500/calcular-media/valor1/valor2</p>
+<hr>
+<h3>Rota "/home"</h3>
+<p>Para usar a rota <strong>"home"</strong> basta chamar a portaria correspondete a rota, no caso, <strong>"localhost:3500"</strong>.</p>
+<p class="copy"><strong>Copie e cole: </strong>localhost:3500</p>
+<hr>
+
+
+
+</body>
+
+</html>
